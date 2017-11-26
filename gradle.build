@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+repositories {
+	jcenter()
+	mavencentral()
+}
+
+dependencies { driver 'org.xerial:sqlite-jdbc:3.7.2' }
