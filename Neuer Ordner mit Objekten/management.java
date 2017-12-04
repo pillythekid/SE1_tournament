@@ -6,12 +6,13 @@ public class management {
 	
 	DBcontroller sqlFEED;
 	ArrayList[][] _map;
+	int[][] _map;
 	String _player1;
 	String _player2;
 	
 	management(int _game){
 		sqlFEED = new DBcontroller(_game);
-		_map = null;
+		_map = new int[8][8];
 		_player1 = null;
 		_player2 = null;
 
@@ -25,3 +26,4 @@ public class management {
 		ArrayList<int> _mapList = sqlFEED.getMAP(0);
 	}
 }
+
